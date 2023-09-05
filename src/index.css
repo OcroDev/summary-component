@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+
+  /* ## Colors  */
+  /* ### Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Light-red-15: hsla(0, 100%, 67%, 0.05);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Orangey-yellow-15: hsl(39, 100%, 56%, 0.05);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Green-teal-15: hsl(166, 100%, 37%, 0.05);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Cobalt-blue-15: hsl(234, 85%, 45%, 0.05);
+  --Dark-gray: hsl(0, 0%, 66%);
+  /* ## Gradients  */
+  /* (background) */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: rgb(46, 43, 233);
+  /* (circle) */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Light-lavender-10: hsl(241, 100%, 89%,0.6);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+}
+
+p{
+  font-size: 18px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+      min-width: 375px;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

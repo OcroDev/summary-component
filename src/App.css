@@ -1,0 +1,16 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
